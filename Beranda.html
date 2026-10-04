@@ -56,3 +56,24 @@
           <small id="expenseCount">6 transaksi pengeluaran</small>
         </div>
       </div>
+      <div class="content-grid">
+        <div class="panel add-panel">
+          <div class="panel-title">
+            <div class="plus-box">＋</div>
+            <div><h2>Tambah transaksi</h2><p>Catat hari ini, tenang esok hari.</p></div>
+          </div>
+          <div class="divider"></div>
+          <form id="transactionForm">
+            <label>Judul transaksi
+              <input id="title" required placeholder="Contoh: Belanja mingguan">
+            </label>
+            <label>Jumlah
+              <div class="amount-input"><span>Rp</span><input id="amount" type="number" min="1" required placeholder="0"></div>
+            </label>
+            <label>Jenis transaksi
+              <select id="type"><option value="expense">Pengeluaran</option><option value="income">Pemasukan</option></select>
+            </label>
+            <button class="primary-btn" type="submit">＋ &nbsp;Tambah transaksi</button>
+          </form>
+          <div class="form-tip">♧ &nbsp;Langkah kecil untuk finansial yang lebih baik.</div>
+        </div>
